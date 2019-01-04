@@ -1,0 +1,10 @@
+version: "2"
+services:
+  db.mysql.server:
+    image: mysql:5.6
+    environment:
+      - MYSQL_ROOT_PASSWORD=msy53719
+    volumes:
+      - ~/database/mysqldb:/var/lib/mysql
+    ports:
+      - 3306:3306
